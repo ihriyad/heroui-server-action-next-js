@@ -3,6 +3,8 @@ import React from "react";
 import Task from "./components/Task";
 import { AddTasks } from "@/components/tasks/AddTasks";
 import { createATask } from "@/lib/actions";
+import Link from "next/link";
+import { Button } from "@heroui/react";
 
 const TasksPage = async () => {
   const data = await getTasks();
@@ -20,6 +22,9 @@ const TasksPage = async () => {
 
       <AddTasks createATask={createATask}></AddTasks>
       </div>
+      <Link href="/tasks/new">
+      <Button variant="secondary">Add more task</Button>
+      </Link>
     </div>
   );
 };
