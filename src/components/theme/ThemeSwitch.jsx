@@ -21,9 +21,9 @@ const ThemeSwitch = () => {
             >
               <Switch.Icon>
                 {isSelected ? (
-                  <Moon className="size-4 text-cyan-600" />
+                  <Sun className="size-4 text-cyan-600" />
                 ) : (
-                  <Sun className="size-4 text-blue-600" />
+                  <Moon className="size-4 text-blue-600" />
                 )}
               </Switch.Icon>
             </Switch.Thumb>
